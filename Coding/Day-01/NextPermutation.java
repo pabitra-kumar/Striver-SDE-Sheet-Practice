@@ -2,7 +2,7 @@ import java.util.*;
 
 public class NextPermutation {
     public static void main(String[] args) {
-        int[] a = {3,2,1};
+        int[] a = {3,2,1};  // Input
         nextPermutation(a);
         System.out.println(Arrays.toString(a));
     }
