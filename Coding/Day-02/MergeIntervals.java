@@ -20,7 +20,6 @@ public class MergeIntervals {
         System.out.println(mergeIntervals(arr).get(0).finish);
     }
     public static List<Interval> mergeIntervals(Interval[] intervals) {
-        // write your code here.
         Arrays.sort(intervals, new Comparator<Interval>() {
             @Override
             public int compare(Interval interval1, Interval interval2) {
