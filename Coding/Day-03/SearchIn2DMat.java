@@ -2,6 +2,7 @@
 
 public class SearchIn2DMat {
     public static void main(String[] args) {
+        // row-wise and Column wise Sorted (GFG)
         int[][] mat = {
             { 3, 30, 38},
             {36, 43, 60},
