@@ -10,19 +10,13 @@ public class MiddleOfLinkedList {
     }
     public ListNode middleNode(ListNode head) {
         if(head == null || head.next == null) return head;
-        ListNode h1 = head;
-        int i = 1;
-        while(h1.next != null)
+        ListNode slow = head;
+        ListNode fast = head;
+        while( fast != null && fast.next != null)
         {
-            h1 = h1.next;
-            i++;
+            slow = slow.next;
+            fast = fast.next.next;
         }
-        i = i/2 + 1;
-        h1 = head;
-        while(i-->1)
-        {
-            h1 = h1.next;
-        }
-        return h1;
+        return slow;
     }
 }
